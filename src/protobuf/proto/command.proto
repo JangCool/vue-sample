@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option optimize_for = SPEED;
+
+package protobuf.proto;
+syntax = "proto3";
+
+message Command {
+
+				string					commandType			= 1; // 명령
+	repeated 	string 					agentId				= 2; // 에이전트
+    repeated 	string              	metricsIds 			= 3; // 파라메터
+				map<string, string>		parameter			= 4; // 파라메터
+				bytes					data				= 5; // 응답 데이터 또는 요청시 파라메터 왜 별도로 전달 할 데이터.
+				bool					success				= 6; // 성공여부
+				bool					error				= 7; // 에러여부
+				string					message				= 8; // 응답 내용.
+}
