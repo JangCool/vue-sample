@@ -1,0 +1,249 @@
+.service-group {    
+    margin: auto;
+    width: 86%;
+    box-sizing: border-box;
+    overflow-x: visible;
+    /* padding: 0 5rem; */
+}
+.service-group .ptabs1 .bx{padding:0;}
+.service-group .ptabs1 .bx .tab{display:flex;height:96px;padding:1.312rem 2rem;border-radius:8px;-webkit-border-radius:8px;}
+.service-group .ptabs1 .bx.on .tab{border-color:#191919;background-color:#fff;}
+.service-group .ptabs1 .bx.on .tab:after{content:'';display:block;position:absolute;width:28px;height:28px;background:url('../../assets/svg/icon/service-group-choice-solid.svg') 0 0 no-repeat;}
+
+.service-group .ptabs1 .bx .server-num{right:16%;height:38px;font-size:26px;line-height:38px;}
+.service-group .ptabs1 .add-server .tab{background-color:#f1f1f5;cursor:pointer;}
+.service-group .ptabs1 .add-server .tab .add{padding-top:26px;background-size: 20px;}
+.service-group .ptabs1 .bx.blank{cursor:default;}
+.service-group .ptabs1 .bx.blank .tab{background-color:#F8F8F8}
+.service-group .ptabs1 .bx.blank .tab:before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:56px;height:56px;background:url('../../assets/svg/icon/server_cache_wt.svg') 0 0 no-repeat;}
+.service-group .ptabs1 .bx.blank.was .tab:before{background-image: url('../../assets/svg/icon/server_was_wt.svg');}
+.service-group .ptabs1 .bx.blank.cache .tab:before{background-image: url('../../assets/svg/icon/server_cache_wt.svg');}
+.service-group .ptabs1 .bx.blank.db .tab:before{background-image: url('../../assets/svg/icon/server_db_wt.svg');}
+.service-group .ptabs1 .bx.blank.os .tab:before{background-image: url('../../assets/svg/icon/server_os_wt.svg');}
+.service-group .ptabs1 .bx.blank.on .tab:after{display:none;}
+.service-group.engine .ptabs1 .bx{position:relative;line-height:22px;}
+.service-group.engine .ptabs1 .bx .tab{height:136px;}
+.service-group.engine .ptabs1 .bx.on .tab:after{top:70%;right:32px;}
+.service-group.engine .ptabs1 .bx .server-name .tit{font-size:18px;line-height:27px;}
+
+.service-group .swiper-slide .server-num{right:24% !important;}
+.service-group .swiper-slide.large{width:310px !important;}
+.service-group .swiper-slide.large .server-num{right:24% !important;}
+.service-group .swiper-slide .on{border:1px solid #191919;}
+
+.service-group .swiper-button-next, .service-group .swiper-button-prev{overflow:hidden;position:relative;width:40px;height:40px;margin-top:-20px;background-color:#fff;border:1px solid #dbdbdb;border-radius:20px;-webkit-border-radius:20px;z-index:1;cursor: pointer;}
+.service-group .swiper-button-next:after, .service-group .swiper-button-prev:after{content:'';position:absolute;top:8px;left:8px;width:24px;height:24px;}
+.service-group .swiper-button-prev{position:absolute;top:50%;left:1.5rem;background:url('../../assets/svg/icon/arrow-prev-solid.svg') 50% 50% no-repeat;}
+.service-group .swiper-button-next{position:absolute;top:50%;right:1.5rem;background:url('../../assets/svg/icon/arrow-next-solid.svg') 50% 50% no-repeat;}
+
+.swiper-container{position:static! important;}
+
+.big-service-groups .order-num{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    top:28px;
+    left:26px;
+    width:16px;
+    height:16px;
+    background-color:#ff4684;
+    border-radius:50%;
+    z-index:1;
+}
+.big-service-groups .order-num em{
+    font-family:'roboto';
+    color:#fff;
+    font-size:11px;
+    line-height:1;
+    font-weight:bold;
+}
+
+.big-service-groups .service-group-items {
+    display: flex;
+    overflow: hidden;
+}
+
+.big-service-groups .service-group-item {
+    margin: 0 10px;
+    width: 266px;
+}
+
+.big-service-groups .service-group-item .card.active{
+    border-color: #191919;
+    border-left: 4px solid #191919;
+}
+
+.big-service-groups .service-group-item .btn-service-group-item {
+    transition: border-color 0.45s ease-in-out;
+}
+
+.big-service-groups .service-group-item:hover .card{
+    border-color: #191919;
+}
+
+.big-service-groups .service-group-item:hover .card.empty{
+    border-color: #dbdbdb;
+}
+
+.big-service-groups .service-group-item .card.empty button{
+    pointer-events: none;
+}
+
+// .big-service-groups .service-group-item :not(.active).btn-service-group-item:hover {
+//     border-radius:0.25rem;
+// }
+
+.big-service-groups .service-group-item .btn-service-group-item .circle-group .circle{
+    background-color: rgb(184, 184, 184);
+}
+
+.big-service-groups .service-group-item .btn-service-group-item.active  .circle-group :nth-child(1) .circle{
+    background-color: #28a745;
+}
+
+.big-service-groups .service-group-item .btn-service-group-item.active  .circle-group :nth-child(2) .circle {
+    background-color: #ffc107;
+}
+
+.big-service-groups .service-group-item .btn-service-group-item.active .circle-group :nth-child(3) .circle {
+    background-color: #c82333;
+}
+
+.big-service-groups .service-group-items .service-group-item .card-body{
+    padding: 1.5rem;
+}
+
+.big-service-groups .service-group-items .service-group-item .symbol-icon {
+    top: 28px;
+    position: relative;
+}
+
+.big-service-groups .btn-service-group-item {
+    text-align: start;
+    min-height: 142px;
+    border-radius:4px;
+}
+
+.big-service-groups .card.empty {
+    background-color: #F8F8F8;
+    cursor: default;
+}
+
+.big-service-groups .card.empty:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+}
+
+.was .big-service-groups .card.empty:before {
+    background: url('../svg/icon/server_was_wt.svg') 0 0 no-repeat;
+}
+.cache .big-service-groups .card.empty:before {
+    background: url('../svg/icon/server_cache_wt.svg') 0 0 no-repeat;
+}
+.os .big-service-groups .card.empty:before {
+    background: url('../svg/icon/server_os_wt.svg') 0 0 no-repeat;
+}
+.db .big-service-groups .card.empty:before {
+    background: url('../svg/icon/server_db_wt.svg') 0 0 no-repeat;
+}
+
+.big-service-groups .service-group-items .service-group-item .symbol-icon-engine{
+    float: left !important;
+    left: 1.5rem !important;
+    margin-left: -5px !important;
+}
+
+.big-service-groups .service-group-items .service-group-item .symbol-icon .hi, .big-service-groups .service-group-items .service-group-item .symbol-icon-engine .hi {
+    background-color: #e2e1e1;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-size: 60px !important;
+}
+
+.big-service-groups .service-group-items .service-group-item .server-count{
+    font-size:1.5rem !important
+}
+
+.big-service-groups .service-group-items .service-group-item .symbol-icon .hi + .hi, .big-service-groups .service-group-items .service-group-item .symbol-icon-engine .hi + .hi {
+    margin-left: -16px;
+}
+
+.big-service-groups .side-control{
+    background-color: #fff;
+    transition: border-color 0.45s ease-in-out;
+    margin-bottom: 1.25rem;
+    word-wrap: break-word;
+    border: 1px solid #D8DFE8;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-service-groups .prev{
+    flex: 30px 0 0;
+    margin-right: 0.5rem;
+}
+
+.big-service-groups .next{
+    flex: 0 0 30px;
+    margin-left: 0.5rem;
+}
+
+.big-service-groups .side-control{
+    background-color: #fff;
+    transition: border-color 0.45s ease-in-out;
+    margin-bottom: 1.25rem;
+    word-wrap: break-word;
+    border: 1px solid #D8DFE8;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-service-groups .side-control:hover{
+    border: 1px solid #dbdbdb;
+}
+
+.big-service-groups .btn-control {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    right: -20%;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.big-service-groups .btn-control button {
+    width: 100px;
+    height: 50%;
+    padding: 1rem;
+    background-color: #fff;
+    border-left: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.big-service-groups .btn-control button:nth-child(1){
+    border-radius:0 4px 0 0;
+}
+
+.big-service-groups .btn-control button:nth-child(2){
+    border-radius:0 0 4px 0;
+}
+
+.big-service-groups .service-group-item .btn-service-group-item:hover .btn-control {
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+}

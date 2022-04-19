@@ -1,0 +1,602 @@
+$base-font-color:#fff;
+$content-font-color: #a9acbc;
+$input-focus-border-color: #fff;
+
+:root {
+    --base-font-color: $base-font-color;
+    --content-font-color: $content-font-color;
+    --input-focus-border-color: $input-focus-border-color;
+}
+
+.hmc.dark{
+    
+    .wrapper{
+        background-color:#1a1d24;
+        color:$content-font-color;
+    }
+
+    .wrapper .side-nav-wrapper{
+        background-color:#232730;
+    }
+    
+    .navbar-top{
+        background-color:#1a1d24;
+        color: $base-font-color;
+    }
+
+    .navbar-top .navbar-nav-right-group .user-sub-menu > ul > li a{
+        color: #fff;
+    }
+
+    .navbar-top .navbar-nav-right-group .user-sub-menu > ul > li.active a{
+        color: #fff;
+    }
+
+    .side-nav .side-nav-menu .nav .nav-link:hover {
+        background-color: #272c37;
+    }
+
+    .side-nav .side-nav-header{
+        border-color: #3d4456; 
+    }
+
+    .dropdown-menu{
+        background-color: #232730;
+        border-color:#232730;
+        box-shadow:none !important;
+        color:$base-font-color;
+    }
+
+    .dropdown-item{
+        color: $base-font-color;
+    }
+
+    .dropdown-item:hover{
+        background-color: #1a1d24;
+    }
+
+    .shadow-right-sm{
+        box-shadow: 0 0 5px 0 rgba(0,0,0, 0.6) !important;
+        -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0, 0.6) !important;
+    }
+
+    .modal-header{
+        border-color: #3d4456;
+    }
+
+    .modal-content{
+        background-color: #1a1d24;
+        color:$content-font-color;
+    }
+
+    .modal-footer{
+        border-color: #3d4456;
+    }
+    
+    .card{
+        background-color:#1a1d24;
+        border-color:#3d4456;
+    }
+
+    .card-header .card-title{
+        color:$base-font-color;
+    }
+
+    .card-header.border-bottom{
+        border-color:#3d4456 !important;
+    }
+
+    .card-header, .card-control, .card-footer{
+        background-color: #1a1d24;
+    }
+
+    .card-header .card-title em{
+        color:$content-font-color;
+    }
+
+    .card-control.border-bottom{
+        border-color:#3d4456 !important;
+    }
+
+    .card-footer{
+        border-color:#3d4456;
+    }
+
+    // .card.shadow{
+    //     box-shadow:none !important;
+    // }
+
+    .card.blank{
+        background-color: #232730;
+    }
+
+    .add-server a{
+        background-color: #232730;
+    }
+
+    .text-status{
+        color:$content-font-color;
+    }
+
+    .main-header-title{
+        color:$base-font-color;
+    }
+
+    .form-control{
+        border-color: #3d4456;
+        background-color: #1a1d24;
+        color: #fff;
+    }
+
+    .form-select{
+        background-color: #1a1d24;
+        color: #fff;
+        background-image:url("/static/images/common/select-arrow-wt.png");
+        border-color:#3d4456;
+    }
+
+    .form-select:focus{
+        border-color: #fff;
+    }
+
+    .form-label{
+        color: #a9acbc;
+    }
+
+    .form-check-label{
+        color:$base-font-color;
+    
+    }
+
+    input:focus{
+        border-color: $input-focus-border-color !important;
+    }
+    
+    .input-group-text{
+        border-color: #3d4456;
+        background-color: #1a1d24;
+        color: #fff;
+    }
+    
+    .btn-icon{
+        background-color: #1a1d24;
+        border-color: #3d4456;
+        color: #fff;
+    }
+
+    .btn-close {
+        background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    }
+    
+    .divider{
+        border-color:#3d4456;
+    }
+
+    .border-top{
+        border-color:#3d4456 !important;
+    }
+
+    .agent-switch{
+        background-color: #232730;
+        border-color:#14171d;
+        box-shadow: 0 0 5px 0 rgba(0,0,0, 0.6);
+        -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0, 0.6);
+    }
+
+   .agent-switch .h3{
+        color: #fff;
+    }
+
+    .agent-switch > h3, .agent-switch > div {
+        border-color:#3d4456;
+    }
+
+    .agent-text .server-name .tit {
+        color:$base-font-color;
+    }
+    
+    .agent-text .server-name .exp {
+        color:$content-font-color;
+    }
+    
+    .agent-text .user-num {
+        color:$base-font-color;
+    }
+    
+    .ptabs1 .bx .tab{
+        background-color: #363c48;
+        border-color: #14171d;
+    }
+    
+    .ptabs1 .bx .server-num{
+        color:$base-font-color;
+    }
+
+    .ptabs1 .bx.on .server-num{
+        color: #191919;
+    }
+
+    .ptabs1 .bx.on .agent-text .server-name .tit{
+        color: #191919;
+    }
+
+    .set-register-app > div > span{
+        border-color: #3d4456;
+        background-color: #363C48;
+        color: #fff;
+    }
+
+    .tooltip1 .license.text{color:$content-font-color;}
+
+    .engine-server .server-icon{
+        border-color: #363c48;
+    }
+
+    .tit-and-info > dt{
+        color:$base-font-color;
+    }
+
+    .tit-and-info > dd{
+        color:$content-font-color;
+    }
+
+    .connect-status{
+        color: #fff;
+    }
+
+    .sv-id ul{
+        border-color: #363c48;
+    }
+
+    .big-service-groups .side-control{
+        background-color: #232730;
+        border: 1px solid #3d4456;
+    }
+
+    .shadow {
+        box-shadow:1px 0px 10px 0px rgba(8, 6, 6, 0.6)!important;
+    }
+
+    .shadow-left-sm {
+        box-shadow: -0.125rem 0 0.25rem 0 rgba(0, 0, 0, 0.75) !important;
+    }
+    
+    .shadow-left {
+        box-shadow: -0.15rem 0 1.75rem 0 rgba(0, 0, 0, 0.75) !important;
+    }
+    
+    .shadow-left-lg {
+        box-shadow: -1rem 0 3rem 0 rgba(0, 0, 0, 0.75) !important;
+    }
+
+    .big-service-groups .card.empty {
+        background-color: #232730;
+    }
+
+    .big-service-groups .service-group-item .card.active{
+        border-color: #fff;
+    }
+
+    .big-service-groups .service-group-item:hover .card{
+        border-color: #fff;
+    }
+    
+    .big-service-groups .service-group-item:hover .card.empty{
+        border-color: #3d4456;
+    }
+
+    .timeline::after{
+        background-color:#3d4456;
+    }
+
+    .time-wrap .detail span{
+        color: #fff;
+    }
+
+    .app.settings .bx.on .tab{
+        background-color:#d2e9ff !important;
+    }
+
+    .app.was .ptabs1.server-connect .bx.on .tab{
+        background-color:#d2e9ff !important;
+    }
+
+    .app.cache .ptabs1.server-connect .bx.on .tab{
+        background-color:#ffd4e2 !important;
+    }
+
+    .app.db .ptabs1.server-connect .bx.on .tab{
+        background-color:#fffbc0 !important;;
+    }
+
+    .app.os .ptabs1.server-connect .bx.on .tab{
+        background-color:#e4e7ee !important;;
+    }
+
+    .nav-tabs{
+        border-color:#3d4456 !important;
+    }
+
+    .set-alert-menu a{
+        color:$base-font-color;
+    }
+
+    .set-alert-menu .depth-2 a:after{
+        border-color:$base-font-color;
+    }
+
+    .nav-tabs .nav-link{
+        background-color: transparent;
+    }
+
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+        color: $was;
+        border-color: $was;
+    }
+
+    .navbar-top .navbar-nav-right-group .user-sub-menu{
+        background-color: #303a4e;
+    }
+    
+    .side-nav .side-nav-header .side-nav-menu-title {
+        color:$base-font-color;
+    }
+      
+    .border{
+        border-color:#3d4456 !important;
+    }
+
+    .o-stat{
+        background-color: #363c48;
+    }
+
+    .o-stat .text-sm{
+        color: $content-font-color;
+    }
+
+    .o-stat .text-lg{
+        color: $base-font-color;
+    }
+
+    .server-top-status > p{
+        color:$content-font-color;
+    }
+
+    .sv-grp .s-grp .dt{color:$content-font-color;}
+
+    .hamburger-menu .bar, 
+    .hamburger-menu .bar:before,
+    .hamburger-menu .bar:after {
+        background-color: #fff;
+    }
+
+    .set-title h3{
+        color:$base-font-color;
+    }
+
+    .text-main{
+        color:$base-font-color;
+    }
+
+    .btn{
+        color:$base-font-color;
+    }
+
+    .slider-value input[type=text]{
+        color:$base-font-color
+    }
+
+    .multiselect{
+        background-color: #1a1d24;
+    }
+
+    .multiselect-clear{
+        background-color: #1a1d24;
+    }
+
+    .multiselect-clear:hover .multiselect-clear-icon{
+        background-color:#fff;
+    }
+
+
+    .multiselect-tags-search{
+        background-color: #1a1d24;
+        color: #fff;
+    }
+
+    .setting-tools {
+        background-color: #1a1d24;
+    }
+
+    .chart-widget-setting-layer .show-hide-title > a:not(:hover){
+        color:$base-font-color;
+    }
+    
+    .chart-widget-setting-layer .show-hide-title a:hover{
+        color:#3493FF;
+    }
+    
+    .chart-widget-setting-layer .items-wrap {
+        box-shadow: #000000d1 1px 0px 8px 0px;
+    }
+
+    .hamonica-simbol{
+        content:url("../../../public/static/images/common/simbol_wt.png");
+    }
+
+    .hamonica-logo{
+        content:url("../../../public/static/images/common/logo_text_wt.png");
+    }
+
+    .big-service-groups .service-group-item .btn-service-group-item{
+        color:$base-font-color;
+    }
+
+    .setting-tools .chart-type .title, .setting-tools .title{
+        border-color: #3d4456;
+        border-color: #3d4456;
+    }
+
+    .ptabs1.server-connect .bx:disabled .tab {
+        background-color: #232730 !important;
+        border-color: #2d323c !important;
+    }
+    
+    .ptabs1 .bx:disabled .server-name, .ptabs1 .bx:disabled .server-name em, .ptabs1 .bx:disabled .server-num {
+        color: #4c4c4c !important;
+    }
+    
+    .ptabs1 .bx:disabled .agent-icon.server .ico {
+        background-color: #232730;
+    }
+
+    .chart-widget-setting-layer .chart-tabs {
+        box-shadow: #000000d1 1px 0px 8px 0px !important;
+    }
+
+    .chart-widget-setting-layer .chart-tabs button {
+        background: #232730;
+    }
+
+    .chart-widget-setting-layer .chart-tabs button.active {        
+        color: #fff;
+        background: #1a1d23;
+        z-index: 2;
+    }
+
+    .chart-widget-setting-layer .chart-tabs button {
+        width: 113px !important;
+        display: block;
+        float: left;
+        position: relative;
+        width: 50%;
+        height: 36px;
+        color: #6d6c61;
+        font-size: 13px;
+        line-height: 36px;
+        text-align: center;
+        background: #232730;
+    }
+
+    .big-service-groups .btn-control button {
+        background-color: #1a1d23;
+        border-color: #3d4456;
+        color:$base-font-color;
+    }
+
+    .big-service-groups .service-group-item .btn-service-group-item.active{
+        border-color: #fff;
+    }
+
+    .setting-tools .chart-type .title > a{
+        color:$base-font-color;
+    }
+
+    .setting-tools .chart-list > ul > li a{
+        border-color: #3d4456;
+    }
+
+    .setting-tools .chart-list > ul > li a:hover{
+        border-color: #fff;
+    }
+
+    .navbar-top .navbar-nav-right-group .user-sub-menu > ul > li.active a:after {
+        border-color:#fff;
+    }
+
+    .navbar-top .navbar-nav-right-group .nav-item .nav-link, .side-nav .side-nav-menu .nav .nav-link{
+        color: #fff;
+    }
+
+    .card-header .title-wrap .card-subtitle{
+        color: $content-font-color;
+    }
+
+    .cache-list li dt, .cache-list li dd{
+        background: #232730;
+    }
+
+    .cache-list li:hover dt,
+    .cache-list li:hover dd {
+        background-color: #e7efff;
+        color: #0061ff;
+    }
+
+    .cache-list li:hover dt label{
+        color: #0061ff;
+    }
+
+    .btn.bg-light{
+        background-color: #232730 !important;
+    }
+
+    .name-id-wrap .name-id{
+        background-color: #232730;
+        border-color: #3d4456;
+    }
+
+    .name-id-wrap .name-id.active{
+        background-color: #ffd4e2;
+
+    }
+
+    .name-id-wrap .name-id.empty{
+        background-color: #232730;
+        border-color: #3d4456;
+    }
+
+    .name-id-wrap .name-id.empty:after{
+        background-color: #3d4456;
+    }
+
+    .card.empty .agent-icon{
+        background-color: #232730;
+    }
+
+    .card.empty .agent-text .server-name em{
+        background-color: #232730;
+    }
+
+    textarea {
+        background-color: #1a1d24;
+        color: #fff;
+        border-color: #3d4456;
+    }
+
+
+    table td{
+        color: $content-font-color;
+    }
+
+    table tr{
+        border-color: #3d4456 !important;
+    }
+
+    table th{
+        background-color: #363c48;
+        color: #fff;
+        border-color: #3d4456 !important;
+    }
+
+    .tbl-rw{border-color:#3d4456;background:#232730;}
+    .tbl-rw th{color:#fff;background:#363c48}
+    .tbl-rw td{color:#a9acbc;}
+    .tbl-rw .ln th, .tbl-rw .ln td{border-color:#3d4456;}
+    .tbl-rw td .ic{width:18px;height:18px;border-radius:50%;-webkit-border-radius:50%;background:#fff;}
+    .tbl-rw td .ic img{border-radius:50%;-webkit-border-radius:50%;}
+
+    .alert-info{
+        background-color: #363c48;
+    }
+
+    .alert-info dt{
+        color:$base-font-color;
+    }
+
+    .alert-info dd{
+        color: #a9acbc;
+    }
+    
+
+}
+

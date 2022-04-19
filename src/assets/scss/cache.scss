@@ -1,0 +1,238 @@
+
+.cache-list {
+    overflow: auto;
+    min-height: 100px;
+}
+
+.cache-list li + li {
+    margin-top: 8px;
+}
+
+.cache-list li:hover dt label {
+    color: #0061ff;
+}
+
+.cache-list li dl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cache-list li dt {
+    overflow: hidden;
+    flex:1;
+    padding: 8px;
+    height: 32px;
+    background-color: #f8f8fa;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.cache-list li dt label {
+    font-size: 12px;
+}
+
+.cache-list li dd {
+    flex: 0 60px;
+    height: 32px;
+    padding: 8px;
+    margin-left:8px;
+    font-size: 12px;
+    background-color: #f8f8fa;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.cache-list li dl.active dt {
+    background-color: #0061ff;
+}
+
+.cache-list li dl.active dt label {
+    color: #fff;
+}
+
+.cache-list li:hover dt,
+.cache-list li:hover dd {
+    background-color: #e7efff;
+    color: #0061ff;
+}
+
+
+.name-id-wrap .name-id {
+    position: relative;
+    background-color: #f8f8fa;
+    padding: 12px 20px 12px 34px;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.name-id-wrap .name-id:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 6px;
+    height: 6px;
+    background-color: #767676;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.name-id-wrap .name-id.active:before {
+    background-color: #767676;
+}
+
+.name-id-wrap .name-id.active {
+    border: 1px solid #ff4684 !important;
+    background-color:#FFF0F5
+}
+
+.name-id-wrap .name-id.active:before {
+    background-color: #ff4684;
+}
+
+.name-id-wrap .name-id.empty {
+    height: 155px;
+    border-color: #dbdbdb;
+    background: #f8f8fa url("../svg/icon/server_cache_wt.svg") center 30px no-repeat;
+    background-size: 60px 60px;
+}
+
+.name-id-wrap .name-id.empty:before {
+    display: none;
+}
+
+.name-id-wrap .name-id.empty:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 34px;
+    bottom: 44px;
+    height: 1px;
+    width: 86%;
+    background-color: #dbdbdb;
+}
+
+.name-id-wrap .name-id dl + dl {
+    margin-top: 10px;
+}
+
+.name-id-wrap .name-id dt div {
+    overflow: hidden;
+    max-width: 90%;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #999999;
+}
+
+.name-id-wrap .name-id dd {
+    overflow: hidden;
+    max-width: 90%;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.name-id-wrap .tools {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+.name-id-wrap .tools .btn {
+    margin-top: -4px;
+}
+
+.name-id-wrap .tools .delete {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    background: #ffffff;
+    border: 1px solid #999999;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.name-id-wrap .tools .delete:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name-id-wrap .tools .delete:after {
+    background-color: #999;
+}
+
+.name-id-wrap .tools .info {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    background: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.name-id-wrap .name-id.active dt div {
+    color: #ff4684;
+}
+
+.name-id-wrap .name-id.active dd {
+    color: #191919;
+}
+
+.name-id-wrap .name-id.active .divider {
+    border-top: 1px solid #FFD2E1 !important;
+}
+
+.name-id-wrap .name-id.active .tools .delete {
+    background: #ff4684;
+    border: none
+}
+
+.name-id-wrap .name-id.active .tools .delete:after {
+    background-color: #fff;
+}
+
+.reserve-eviction {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reserve-eviction dt {
+    margin-left: -2px;    
+    font-size: 12px;
+    line-height: 18px;
+    color: #999999;
+}
+
+.card.empty .agent-icon{height:48px;max-width:48px;width:48px;background:#f1f1f5;}
+.card.empty .agent-text {width:63%;}
+.card.empty .agent-text .server-name em{display:block;width:100%;height:14px;background-color:#f1f1f5;}
+.card.empty .agent-text .server-name em + em{margin-top:8px;}
+
+.agent-icon .order-num{display:flex;position:absolute;top:-10px;left:-10px;width:24px;height:24px;background-color:#ff4684;border-radius:50%;-webkit-border-radius:50%;align-items:center;justify-content: center;}
+.agent-icon .order-num em{font-family:'roboto';color:#fff;font-size:15px;line-height:18px;font-weight:bold;}
+.icon-and-text{display:flex;align-items:center;overflow:hidden;border:1px solid #dbdbdb;padding:20px;border-radius:8px;-webkit-border-radius:8px;}
+.icon-and-text.on{border-color:#191919;}
+.icon-and-text.disabled{background-color:#f8f8fa;}

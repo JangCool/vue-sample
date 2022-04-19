@@ -1,0 +1,56 @@
+/* GRAPH */
+.sv-grp{position:relative;}
+.sv-grp.sd{width:30%;}
+.sv-grp.hf{width:50%;}
+.sv-grp.btm{position:absolute;bottom:30px;}
+.sv-grp .s-grp{position:relative;width:100%;box-sizing:border-box;-webkit-box-sizing:border-box;}
+.sv-grp .s-grp:nth-child(1):nth-last-child(3), .sv-grp .s-grp:nth-child(1):nth-last-child(3) ~ .s-grp{width:33.33%;}
+.sv-grp .s-grp:nth-child(1):nth-last-child(4), .sv-grp .s-grp:nth-child(1):nth-last-child(4) ~ .s-grp{width:25%;}
+.sv-grp .s-grp:nth-child(1):nth-last-child(5), .sv-grp .s-grp:nth-child(1):nth-last-child(5) ~ .s-grp{width:20%;}
+.sv-grp .s-grp .dt{display:block;overflow:hidden;margin-bottom:6px;font-size:12px;line-height:14px;color:$content-font-color;}
+.sv-grp .s-grp .dd{display:block;position:absolute;top:0;right:0;font-size:12px;line-height:18px;color:#d12fab;}
+
+/* 2021-05-22 장진철. 막대 스타일 변경. */
+.sv-grp .s-grp .grp{display:block;position:relative;height:6px;border-radius:15px;background:#f1f1f5}
+.sv-grp .s-grp .grp em{display:block;position:absolute;top:0;left:0;height:6px;border-radius:15px;background:#d12fab;transition:width 1s;}
+.sv-grp .s-grp .grp em.iamout{width:0 !important;transition:width 0s;}
+.sv-grp .s-grp.cache .grp em{background:#ff4684;}
+.sv-grp .s-grp.purple .grp em{background-color:#4e37b2;}
+.sv-grp .s-grp.purple .dd{color:#4e37b2;}
+.sv-grp .s-grp.orange .grp em{background-color:#ff7750;}
+.sv-grp .s-grp.orange .dd{color:#ff7750;}
+.sv-grp .s-grp.green .grp em{background:#28A745;}
+.sv-grp .s-grp.pink .grp em{background:#ff4080;}
+.sv-grp .s-grp.yellow .grp em{background:#FFC107;}
+.sv-grp .s-grp.widget .dt{margin-bottom:0;font-size:12px;line-height:19px;}
+.sv-grp .s-grp.widget .dd{overflow:hidden;position:static;max-width:100%;margin-bottom:6px;text-overflow:ellipsis;white-space:nowrap;}
+.sv-grp .s-grp.widget .dd.big{font-size:20px;line-height:33px;}
+.sv-grp .s-grp + .s-grp{margin-top:12px;}
+.sv-grp .s-grp + .s-grp .dd{color:#843eff;}
+.sv-grp .s-grp + .s-grp em{background:#843eff;}
+.sv-grp.vert{display:flex;}
+.sv-grp.vert .s-grp{display:flex;position:relative;justify-content:space-between;width:64px;}
+.sv-grp.vert .s-grp + .s-grp{margin-top:0;margin-left:40px;}
+.sv-grp.vert .s-grp .dt{margin-bottom:0;font-size:12px;line-height:18px;color:#999999}
+.sv-grp.vert .s-grp .dd{position:static;margin-top:8px;font-size:1.125rem;line-height:1rem;font-weight:500;}
+.sv-grp.vert .s-grp .cpu .dd{color:#D12FAB;}
+.sv-grp.vert .s-grp .mem .dd{color:#843EFF;}
+.sv-grp.vert .s-grp .grp{width:6px;height:45px;}
+.sv-grp.vert .s-grp .grp em{position:absolute;top:auto;bottom:0;left:0;width:6px;transition:height 0.7s;}
+.sv-grp.vert .s-grp .grp em.iamout{height:0 !important;transition:height 0s;}
+.sv-grp.clt .s-grp .dd{color:#00b55d;}
+.sv-grp.clt .s-grp .grp em{background:#00b55d}
+.sv-grp.clt .s-grp + .s-grp .dd{color:#f99600}
+.sv-grp.clt .s-grp + .s-grp .grp em{background:#f99600}
+.sv-grp.clt .mmr{overflow:hidden;margin-top:24px;padding:20px 0;background-color:#f8f8fa;border-radius:4px;-webkit-border-radius:4px;}
+.sv-grp.clt .mmr dl{float:left;width:44.75%;padding-left:5.25%;box-sizing:border-box;-webkit-box-sizing:border-box;}
+.sv-grp.clt .mmr dl + dl{margin-top:0;border-left:1px solid #dbdbdb;}
+.sv-grp.clt .mmr dl dt{font-size:12px;line-height:18px;color:#767676;}
+.sv-grp.clt .mmr dl dd{font-size:15px;line-height:18px;color:#191919;}
+.sv-grp.clt .mmr:after{content:'';display:block;width:100%;clear:both;}  
+.sv-grp.disabled .s-grp .grp em{background:#999999;}
+.sv-grp.disabled .s-grp .dd{color:#999999;}
+.sv-grp.clt.full{width:90.5%;}
+.sv-grp.clt{position:absolute;bottom:20px;right:20px;}
+.sv-grp2{position:absolute;bottom:10%;right:20px;width:50%;height:64%;background-color:#eeeeee;}
+.sv-grp3{position:absolute;bottom:20px;right:20px;width:60%;height:83%}

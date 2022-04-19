@@ -1,0 +1,472 @@
+@charset "UTF-8";
+
+/**
+ * 공통으로 사용할 CSS3 변수 지정.
+ * 
+ * @author 장진철(zerocooldog@pionnet.co.kr)
+ */
+
+:root {
+    --grid-font-family: Noto Sans kr; /* grid 의 font를 통일 시킨다.*/
+    --grid-font-size: 12px; /* grid 의 font 사이즈를 통일 시킨다.*/
+    --grid-column-header-size: 12px; /* grid 의 font 사이즈를 통일 시킨다.*/
+    --grid-selected-color:#3699ff ;
+}
+
+.wj-content{
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.wj-control input {
+    position: relative;
+    top: 0px !important;
+    vertical-align: middle;
+}
+.wj-control .wj-input-group .wj-input-group-btn:last-child:not(:first-child)>.wj-btn, .wj-viewer .wj-control .wj-input-group .wj-input-group-btn:last-child:not(:first-child)>.wj-applybutton {
+    border-left: none;
+}
+.wj-content div[wj-part=ch]{
+    background-color: #edf2f9;
+}
+
+.wj-colheaders .wj-header {
+	background-color: #edf2f9;
+	font-size : var(--grid-column-header-size) !important;
+    font-weight: bold;
+}
+.wj-topleft .wj-header {
+	background-color: #edf2f9;
+}
+
+.wj-header {
+    color: #344050;
+	font-weight: normal;
+    border-right: none;
+    /* border-bottom: none; */
+}
+
+
+.wj-rowheaders .wj-header {
+	background-color: #fff;
+}
+
+.wj-rowheaders .wj-glyph-plus, .wj-glyph-minus {
+	top:0
+}
+
+
+.wj-flexgrid .wj-grid-editor {
+	font-size : var(--grid-font-size);
+}
+
+.wj-rowheaders  .wj-cell{
+    border-bottom: 1px solid #edf2f9 !important;
+    border-right: 1px solid #edf2f9 !important;
+}
+
+.wj-cells .wj-cell{
+    border-bottom: 1px solid #edf2f9 !important;
+}
+
+.wj-cell {
+	font-family: var(--grid-font-family);
+    border-right: none;
+    border-bottom: none;
+	background-color: #fff;
+    color: #344050 !important;
+	font-size : var(--grid-font-size) !important;
+	line-height: normal; 
+	padding : 2px 4px 2px 4px;
+
+}
+
+.wj-cell > .wj-content {
+    width: 100%;
+    border: none !important;
+    border-radius: 0 !important;
+    font-family: var(--grid-font-family);
+    font-size : var(--grid-font-size);
+}
+
+.wj-cell .butterfly-wj-cell-child{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	vertical-align :middle;
+	overflow:hidden;
+	white-space:nowrap;
+    text-overflow:ellipsis;
+    font-family: var(--grid-font-family);
+    font-size : var(--grid-font-size);
+    color: #344050 !important;
+
+}
+.wj-cell .butterfly-wj-cell-child .grid-icon-wrap {
+	position: relative;
+	height: 20px;
+}
+
+.wj-cell .checker {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-left: -7px;
+	margin-top:-7px;
+}
+
+.wj-cell .butterfly-wj-cell-child.underline{
+	text-decoration:underline;
+}
+.wj-cell .butterfly-wj-cell-child.bold{
+	font-weight:bold;
+}
+.wj-cell .butterfly-wj-cell-child.italic{
+	font-weight:bold;
+}
+.wj-cell .butterfly-wj-cell-child.bold{
+	font-weight:bold;
+}
+
+
+.wj-alt:not(.wj-state-selected):not(.wj-state-multi-selected) {
+	background-color: #fff;
+}
+.wj-flexgrid .wj-group {
+	background: rgba(0, 0, 0, 0.1);
+}
+.wj-cells .wj-cell.wj-state-selected {
+    background: #fcfdff;
+    color: #fff;
+    border-bottom: 3px solid var(--grid-selected-color) !important;
+}
+
+.wj-cells .wj-cell.wj-state-multi-selected {
+    background: #fcfdff;
+    color: #fff;
+}
+
+
+.wj-colheaders .editable {
+    background: linear-gradient(to bottom, #EAEAEA, #fff);
+}
+
+/*input combobox*/
+.wj-template{
+    height:21px;
+}
+.wj-input-group-btn{
+    height:29px;
+}
+.wj-input-group .wj-form-control{
+    font-family: var(--grid-font-family);
+    font-size : var(--grid-font-size);
+    height:21px;
+}
+.wj-topleftcontextmenu {
+	cursor:pointer ;
+	position:absolute;
+	height:24px; 
+	width:100%;
+	margin-left:10px;
+	line-height:24px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.wj-topleftcontextmenu-li:HOVER {
+	background: #C5E4EC none repeat scroll 0% 0%;
+    background-color: #C5E4EC;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+}
+.wj-flexgrid .wj-frozen-col{
+	border-right: 2px solid #666
+}
+
+.wj-cell.wj-wrap {
+    white-space: normal;
+    text-overflow: clip;
+    word-break: break-all;
+    word-wrap: normal;
+}
+
+
+.wj-cell .butterfly-grid-image-button{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: inline-block;
+}
+
+
+.wj-cell .butterfly-grid-image-button dd{
+	display: block;
+	margin: 0;
+	line-height:20px;
+	padding-left: 24px;
+	text-align: left;
+}
+
+
+.wj-cell .butterfly-grid-custom {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: table;
+}
+
+.wj-cell .butterfly-grid-custom .butterfly-grid-custom-dt{
+	display: table-cell;
+    vertical-align: middle;
+    line-height: 100%;
+    padding-right: 4px;
+}
+
+.wj-cell .butterfly-grid-custom .butterfly-grid-custom-span{
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 100%;
+    font-family: var(--grid-font-family);
+    font-size : var(--grid-font-size);
+}
+
+.wj-cell .butterfly-grid-custom .butterfly-grid-custom-button{
+	vertical-align: middle;
+	display: table-cell;
+	text-align: right;
+}
+.wj-cell .butterfly-grid-custom-button {
+	height: 20px;
+}
+
+.wj-cell .butterfly-grid-custom .butterfly-grid-custom-button>a{
+	/* float: left */
+}
+
+
+.butterfly-grid-icon-image.preview {
+	top: unset !important;
+	margin-top: unset !important;
+}
+
+.butterfly-grid-icon-image {
+	float:left;
+	position: absolute;
+	top: 50%;
+	/* left: 0; */
+	margin-top: -10px;
+	width : 20px;
+	height : 20px;
+	border : 1px solid #e0e0e0;
+	background-size: 20px 20px;
+}
+
+.butterfly-grid-icon-image.static {
+	position: static;
+	top: 0;
+	margin-top: 0;
+}
+
+.butterfly-grid-custom-button-search{
+	display:inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+}
+
+.butterfly-grid-custom-button-clear{
+	width: 16px;
+	height: 16px;
+}
+
+.butterfly-grid-custom-button-upload{
+	width: 16px;
+	height: 16px;
+}
+
+.butterfly-grid-custom-button-file{
+	display:none;
+}
+
+.color-red {
+	background-color: red !important;
+}
+
+.butterfly-controll-icon {
+	position: absolute; 
+	top: 50%; 
+	transform: translateX(-50%) translateY(-50%);
+	left: 50%;
+	margin: 0px; 
+	padding: 0px;
+	width: 14px;
+    height: 14px;
+    font-weight: bold;
+    font-family: var(--grid-font-family);
+    font-size : var(--grid-font-size);
+}
+
+.butterfly-controll-icon>input[type=checkbox] {
+    margin: 0px 0 0px 0px;
+    width: 15px;
+    height: 15px;
+    vertical-align: inherit !important;
+}
+
+/** grid가 트리 구조 일 때 스타일. */
+/* .wj-cell.wj-group { */
+/*   border: none; */
+/* } */
+.wj-cell.wj-group:not(.wj-state-selected):not(.wj-state-multi-selected) {
+  background-color: white;
+}
+.grand-total{
+    font-weight: bold;
+    background-color: #f1f1f1 !important;
+    border-left: #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+}
+.import-excel-input-file{
+	visibility: hidden;
+    margin: 0;
+    padding: 0;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+.columnheader-ctx-menu{
+	font-size : var(--grid-font-size);
+}
+.wj-cell-check{
+	position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wj-elem-collapse.wj-glyph-square {
+    vertical-align: middle;
+	position: inherit;
+	width:27px !important;
+	height:11px !important;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 1em; height: 1em;
+    border-top: 0px; border-bottom: 0px; border-left: 0px; border-right: 0px;
+    background: url(/static/images/grid/ico_tree_none.gif);
+    margin-top: -3px;
+}
+
+.wj-btn > .wj-glyph-down{
+    vertical-align: middle !important;
+}
+
+.wj-elem-collapse.wj-glyph-right {
+    vertical-align: middle;
+	position: inherit;
+	width:27px !important;
+	height:11px !important;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 1em; height: 1em;
+    border-top: 0px; border-bottom: 0px; border-left: 0px; border-right: 0px;
+    background: url(/static/images/grid/ico_tree_plus.gif);
+    margin-top: -3px;
+}
+.wj-elem-collapse.wj-glyph-down-right {
+    vertical-align: middle;
+	position: inherit;
+	width:27px !important;
+	height:11px !important;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 1em; height: 1em;
+    border-top: 0px; border-bottom: 0px; border-left: 0px; border-right: 0px;
+    background: url(/static/images/grid/ico_tree_minus.gif);
+}
+.rd-input{
+	height : 28px !important;
+	border-radius: 2px !important;
+	background-color: #f4f7fa !important;
+	font-size: 9pt !important;
+}
+
+.card-btn .rd-input{
+	height : 26px !important;
+}
+
+.rd-grid-border-none{
+	border-radius: 0px !important;
+	border: none;
+}
+.grid-rows-per-page{
+    width:80px;
+}
+/* 그리드 버튼 rowPerPage 높이 조절*/
+.grid-rows-per-page .wj-control .wj-input-group .wj-form-control {
+    height: 22px;
+}
+
+.card-btn .wj-form-control{
+	padding: 3px 6px !important;
+}
+
+
+/* 페이징 버튼 왼쪽 라인 표현*/
+.wj-pager .wj-input-group .wj-input-group-btn:last-child:not(:first-child)>.wj-btn, .wj-viewer .wj-control .wj-input-group .wj-input-group-btn:last-child:not(:first-child)>.wj-applybutton {
+    border-left: 1px solid rgba(0,0,0,.2);
+}
+
+/* 페이징 input text 숫자 나오는 부분 높이 조절*/
+.wj-pager .wj-input-group .wj-form-control {
+	padding: 0px;
+	height:28px;
+	min-height: 0;
+	font-size: 10pt !important;
+	background: #fff;
+}
+
+/* 페이징 버튼 높이 조절*/
+.wj-pager .wj-input-group .wj-input-group-btn>.wj-btn {
+    height: 28px;
+	font-size: 10pt !important;
+   	background: #fff;
+    
+}
+
+/* .paging{
+	height:28px;
+}
+.paging > .wj-pager{
+	border-radius: 0px;
+	border-top: none;
+	border-bottom: none;
+ 	border: none; 
+	border-right: 1px solid rgba(0,0,0,.2); 
+ }  */ 
+
+/** 달력 배경색 */
+.wj-dropdown-panel .wj-calendar-outer {
+    background: #fff !important;
+}
+
+#grid_header_menu {
+    border: none;
+    position:absolute;
+    display:inline;
+    z-index:10000;
+}
+
+#grid_header_menu > div{
+    display: none;
+}

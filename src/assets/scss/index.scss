@@ -1,0 +1,148 @@
+.user-processing {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(135deg, rgba(222, 203, 230, 1), rgba(209, 213, 230, 0) 80%),
+        linear-gradient(180deg, rgb(192, 199, 233), rgba(0,255,0,0) 80%),
+        linear-gradient(360deg, rgba(241, 221, 213, 1), rgba(0,0,255,0) 80%); 
+}
+ 
+.login-logo{
+    width:560px;
+    min-height:116px;
+    background:url("/static/images/common/login_txt.png") 80px center no-repeat;
+}
+
+.login-form{
+    overflow-y: scroll;
+    max-height: 800px;
+    width:440px;
+    padding:24px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    animation: ani-login 0.6s forwards; 
+    -webkit-animation: ani-login 0.6s forwards;
+}
+
+.login-form.join{
+    animation: ani-join 0.6s forwards; 
+    -webkit-animation: ani-join 0.6s forwards;
+}
+ 
+.sign-up {
+    font-size: 15px;
+    line-height: 22px;
+    color: #767676;
+    padding: 8px 0 30px 0;
+}
+
+.sign-up a{
+    display:inline-block;
+    margin-left:12px;
+    color:#0061FF;
+    text-decoration: underline;
+}
+
+.input-text-border-bottom input{
+    position:relative;
+    height:46px;
+    padding-left:0;
+    padding-right:0;
+    border-radius:0;
+    -webkit-border-radius:0;
+    border:none;
+    border-bottom:#dbdbdb 1px solid;
+    font-size:15px;
+    line-height:46px;
+}
+
+.input-text-border-bottom:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:1px;
+    background:#fff;
+}
+
+.input-text-border-bottom input:focus{
+    border-color:#0061ff !important; 
+    box-shadow:0 1px #0061ff !important;
+    -webkit-box-shadow:0 1px #0061ff !important;
+}
+
+.input-text-border-bottom input:disabled{
+    border-color:#d4d4d8 !important;
+    background:#fff !important;
+}
+
+.input-text-border-bottom.error input{
+    border-color:#fe3131 !important;
+}
+
+.input-text-border-bottom.error:after{
+    background:#fe3131;
+}
+
+.input-text-border-bottom.error input:focus{
+    border-color:#fe3131 !important;; 
+    box-shadow:0 1px #fe3131 !important;;
+    -webkit-box-shadow:0 1px #fe3131 !important;;
+}
+ 
+.form-select.border-bottom{
+    border:0;
+    border-radius:0;
+    height:46px;
+}
+
+.form-group.est label:after{
+    content:"*";
+    position:absolute;
+    font-size:15px;
+    line-height:22px;
+    color:#F52312;
+    top:0px;
+    left:-13px;
+}
+
+.form-group label{
+    position: relative;
+    font-size: 13px;
+    line-height: 19px;
+    color: #191919;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items:flex-end;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+textarea.form-control:focus{
+    border-width:2px;
+    border-color: #0061ff;
+}
+
+.form-control{
+    border-radius:0;
+}
+
+@keyframes ani-login{
+  0% {height:800px;transform-origin:center center; transition:height;}
+  100% {height:480px;}
+}
+
+@keyframes ani-join{
+  0% {height:454px;transform-origin:center center; transition:height;}
+  100% {height:800px;}
+} 

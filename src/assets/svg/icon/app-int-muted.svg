@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="0 0 28 28">
+    <defs>
+        <linearGradient id="a" x1="0.667" y1="0.593" x2="0.097" y2="0.027" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-opacity="0" />
+            <stop offset="1" />
+        </linearGradient>
+    </defs>
+    <g transform="translate(-2409 -74)">
+        <path d="M0,0H28V28H0Z" transform="translate(2409 74)" fill="none" />
+        <g transform="translate(2412 76.999)">
+            <path
+                d="M-5973.732,2242.714l-9.062,5.438a1.766,1.766,0,0,1-1.824-.006l-8.474-5.162a1.761,1.761,0,0,1-.845-1.5v-9.125a1.762,1.762,0,0,1,.856-1.51l8.444-5.061a1.763,1.763,0,0,1,1.829.01l2.408,1.48a.529.529,0,0,1,0,.9l-8.79,5.355a.88.88,0,0,0-.422.751v5.27a.881.881,0,0,0,.413.747l4.572,2.862a1.76,1.76,0,0,0,1.852.01l5.579-3.4v-5.721l-5.43,3.307a.884.884,0,0,1-.919,0l-2.865-1.757a.528.528,0,0,1,0-.9l8.313-5.063a1.762,1.762,0,0,1,1.838,0l2.962,1.82a.879.879,0,0,1,.42.75v8.995A1.764,1.764,0,0,1-5973.732,2242.714Z"
+                transform="translate(5993.936 -2225.533)" fill="#858c9e" />
+            <path d="M-5983.893,2231.435v5.721l3.01,1.692a.88.88,0,0,0,1.311-.768v-8.094a.529.529,0,0,0-.78-.465Z"
+                transform="translate(6000.63 -2222.917)" opacity="0.3" fill="url(#a)" />
+        </g>
+    </g>
+</svg>

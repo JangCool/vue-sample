@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "useDefineForClassFields": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "strict": false,
+      "jsx": "preserve",
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "skipLibCheck":true,
+      "lib": ["esnext", "dom"],
+      "baseUrl": ".",
+      "paths": {
+          "@/*": ["src/*"],
+      },
+      "allowJs": true
+    },
+    "include": [
+        "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue",
+        "local.d.ts"
+  , "src/assets/js/grid/hamonica.grid.js", "src/worker/cache.worker.realtime.js"    ],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+  }
+  

@@ -1,0 +1,162 @@
+/* AGENT RIGHT */
+.agent-switch{
+    overflow: hidden;
+    position: fixed;
+    top: 53px;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    border-left: 1px solid #D8DFE8;
+    padding-bottom: 12px;
+    z-index:3;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+.agent-switch h3{
+    position: relative;
+    height:56px;
+    min-height: 32px;
+    padding: 15px 0 7px 4px;
+    border-bottom: 1px solid #EDEDED;
+    font-size: 15px;
+    line-height: 32px;
+}
+.agent-switch h3 b{
+    display:none;
+}
+.agent-switch h3 button{
+    position:absolute;
+    left:4px;top:15px;
+    width:32px;
+    height:32px;
+    background:url("../../assets/svg/icon/agent-arrow-right.svg") center center no-repeat;
+}
+.agent-switch .ws-sch{
+    display:none;
+    position:relative;
+    padding:8px 12px 8px 32px;
+    border-bottom:1px solid #EDEDED;
+}
+.agent-switch .ws-sch label{
+    display:block;
+    position:absolute;
+    left:12px;
+    top:50%;
+    width:16px;
+    height:16px;
+    transform:translate(0, -50%);
+    background:url("../../assets/svg/icon/search-solid.svg") center center no-repeat;
+}
+.agent-switch .ws-sch input{
+    width:100%;
+    border:0;
+    font-size:12px;
+    line-height:18px;
+    vertical-align: top;
+    background-color: transparent !important;
+}
+.agent-switch .ws-sel{
+    display:none;
+    position:relative;
+    padding:10px 12px;
+    border-bottom:1px solid #EDEDED;
+}
+.agent-switch .chk-wrap{
+    height:100%;
+}
+.agent-switch .chk-wrap .chk-all{
+    display:none;height:24px;padding:0 12px;
+}
+.agent-switch .chk-wrap .chk-all .form-check{
+    display:block;margin-top:16px;
+}
+.agent-switch .chk-wrap .chk-all .form-check label{
+    position:relative;
+    display:block;
+    height:20px;
+    font-size:13px;
+}
+.agent-switch .chk-wrap .m-sub{
+    overflow-y:auto;
+    height:calc(100% - 54px);
+    height:-webkit-calc(100% - 54px);
+    transition:height 0.2s;
+    padding:0 12px;
+}
+.agent-switch .chk-wrap .m-sub li{
+    position:relative;height:20px;
+}
+.agent-switch .chk-wrap .m-sub li .form-check{
+    display:none;margin-top:8px;
+}
+.agent-switch .chk-wrap .m-sub li .form-check label{
+    font-size: 12px;
+    overflow:hidden;
+    display:block;
+    padding-right:18px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.agent-switch .chk-wrap .m-sub li .stat{
+    position:absolute;
+    right:4px;
+    top:50%;
+    width:8px;
+    height:8px;
+    margin-top:4px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+}
+.agent-switch .chk-wrap .m-sub li .stat.green{
+    background-color:#00CD69
+}
+.agent-switch .chk-wrap .m-sub li .stat.yellow{
+    background-color:#FEBD0A
+}
+.agent-switch .chk-wrap .m-sub li .stat.red{
+    background-color:#F52312
+}
+.agent-switch .chk-wrap .m-sub li .stat.unknown{
+    background-color:#b8b8b8
+}
+
+.agent-switch.ag-fx{
+    width:130px;
+    box-shadow:0 0 10px 0 rgba(0,0,0,0.25);
+}
+.agent-switch.ag-fx h3{
+    padding-left:36px;
+}
+
+.agent-switch.ag-fx h3 button{
+    background-image:url("../../assets/svg/icon/agent-arrow-left.svg");
+}
+
+.agent-switch.ag-fx h3 b{
+    display:block;
+}
+.agent-switch.ag-fx .ws-sch{
+    display:block;
+}
+.agent-switch.ag-fx .ws-sel{
+    display:block;
+}
+.agent-switch.ag-fx .chk-wrap .chk-all{
+    display:block;
+}
+.agent-switch.ag-fx .chk-wrap .m-sub li .form-check{
+    display:block;
+}
+.agent-switch.ag-fx .chk-wrap .m-sub li .stat{
+    margin-top:-4px;
+}
+.agent-switch.ag-fx .chk-wrap .m-sub{
+    height:calc(100% - 140px);
+    height:-webkit-calc(100% - 140px);
+}
+.as-right .agent-switch{
+    right:64px;
+}
+.as-right.as-fx .agent-switch{
+    right:250px;
+}
